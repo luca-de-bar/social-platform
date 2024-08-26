@@ -1,0 +1,20 @@
+Definizione Tabelle
+
+- UTENTE può creare POST
+- UTENTE può aggiungere MEDIA a POST
+- POST può avere MEDIA
+- POST può avere TAGS
+- POST può avere LIKE
+- LIKE possono essere aggiunti a POST da UTENTE
+- POST può avere COMMENTI
+
+
+Definizione relazioni :
+
+UTENTE -- POST : Un UTENTE può avere uno o più POST, un POST può avere un UTENTE.
+UTENTE -- MEDIA : un UTENTE può aggiungere uno o più MEDIA, un MEDIA può avere un UTENTE
+UTENTE -- LIKE : un UTENTE può aggiungere molti LIKE ad un POST, lo STESSO LIKE può essere messo solo UNA VOLTA sullo stesso POST
+POST -- MEDIA : un POST può avere più MEDIA, un MEDIA può essere di più POST
+POST -- TAGS : un POST può avere più TAG, un TAG può avere più POST 
+POST -- LIKE : un POST può avere più LIKE, un LIKE può essere messo su un SOLO POST alla volta.
+POST -- COMMENTI : un POST può avere più COMMENTI, lo STESSO COMMENTO può essere più volte sullo stesso POST
